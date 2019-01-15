@@ -14,6 +14,7 @@
     <!-- <link rel="stylesheet" href="style.css" /> -->
     <title>loan calculator</title>
   </head>
+
   <body class="bg-dark">
     <div class="container">
       <div class="row">
@@ -46,10 +47,57 @@
                   />
                 </div>
               </div>
+              <!-- years to replay input -->
+              <div class="form-group">
+                <input
+                  type="number"
+                  class="form-control"
+                  id="years"
+                  placeholder="Years To Repay"
+                />
+              </div>
+              <!-- calculate button -->
+              <div class="form-group">
+                <input
+                  type="submit"
+                  value="Calculate"
+                  class="btn btn-dark btn-block"
+                  id="calculate-button"
+                  placeholder="Years To Repay..."
+                />
+              </div>
             </form>
 
-            <!-- calculate button -->
-            <span id="calc-input" class="btn btn-primary" href="#" role="button">Calculate</a></span>
+            <!-- loader imgage -->
+            <!-- <div id="loading">
+              <img src="img/loading.gif" alt="none">
+            </div> -->
+
+
+            <!-- results -->
+                  
+            <!-- amount inPut -->
+            <div id="results" class="pt-4">
+              <h5>Results</h5>
+            <div class="form-group">
+              <div class="input-group">
+                <span class="input-group-text">Monthly Payment</span>
+                <input type="number" class="form-control" id="monthly-payment" placeholder="Loan Amount" disabled />
+              </div>
+          </div>
+
+          <div class="form-group">
+            <div class="input-group">
+              <span class="input-group-text">Total Payment</span>
+              <input type="number" class="form-control" id="total-payment" placeholder="Loan Amount" disabled />
+            </div>
+          </div>
+            <div class="form-group">
+              <div class="input-group">
+                <span class="input-group-text">Total Interest</span>
+                <input type="number" class="form-control" id="total-interest" placeholder="Loan Amount" disabled />
+              </div>
+            </div>
           </div>
         </div>
       </div>

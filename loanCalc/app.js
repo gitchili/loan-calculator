@@ -1,5 +1,5 @@
 // calc-input
-document.getElementById('calc-input').addEventListener('click',
+document.getElementById('calculate-button').addEventListener('click',
 function(e){
     console.log("wasClicked")
 });
